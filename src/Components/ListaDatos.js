@@ -42,7 +42,7 @@ export const ListaDatos = () => {
     <div>
       {usuarios.map((usuario) => (
         <div key={usuario.id}>
-          <h2>Usuarios tareuki: {usuario.name}</h2>
+          <h2>Usuario: {usuario.name}</h2>
           {albums
             .filter((album) => album.userId === usuario.id)
             .map((album) => (
